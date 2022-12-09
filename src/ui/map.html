@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mapmapmap">
+      <!-- [ 영국 런던을 중심으로 구글지도 만들기 ] -->
+      <div id="googleMap" style="width: 100%; height: 700px"></div>
+
+      <script>
+        function myMap() {
+          var mapOptions = {
+            center: new google.maps.LatLng(51.508742, -0.12085),
+            zoom: 5,
+          };
+
+          var map = new google.maps.Map(
+            document.getElementById("googleMap"),
+            mapOptions
+          );
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE9_rKx10cy0o54sj9Tw8sJfN30-7D9Eo&callback=myMap"></script>
+    </div>
+  </body>
+</html>

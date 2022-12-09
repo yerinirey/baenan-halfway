@@ -1,0 +1,11 @@
+#buttons {
+  position: absolute;
+  display: flex;
+}
+.button {
+  flex-direction: row;
+  width: 7.25vw;
+  height: 42px;
+  margin-top: 93vh;
+  cursor: pointer;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>opensource-중간지점</title>
+
+    <!-- 지도 불러오기 -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoNzyH4SAA9St3UlXcGfCQ9Lb1YM9uScM&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+
+    <!-- 세부 사항 -->
+    <script src="map.js"></script>
+    <link rel="stylesheet" href="map.css" />
+  </head>
+
+  <body>
+    <div id="left">
+      <h1 style="margin-left: 15px">중간 지점 찾기</h1>
+      <div id="holder-box">
+        <!-- 마커 이름 box -->
+        <input
+          id="box-name"
+          class="box controls"
+          type="text"
+          tabindex="1"
+          onclick="isResult();"
+        />
+        <!-- placeholder="마커 이름" -->
+
+        <!-- 장소 검색 box-->
+        <input
+          id="box-input"
+          class="box controls"
+          type="text"
+          tabindex="2"
+          placeholder="  "
+          onclick="isResult();"
+        />
+        <!-- placeholder="장소 검색" -->
+      </div>
+
+      <!-- 지도 box -->
+      <div id="map"></div>
+    </div>
+    <div id="left">
+      <h1 style="margin-left: 15px">주소 목록</h1>
+      <div id="address">
+        <div class="address-box">
+          <h3>구한슬</h3>
+          <h4>대략적인 주소</h4>
+        </div>
+        <div class="address-box">
+          <h3>이시현</h3>
+          <h4>~대략적인 주소~</h4>
+        </div>
+        <div class="address-box">
+          <h3>김예린</h3>
+          <h4>~~대략적인 주소~~</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+#map {
+  height: 60vh;
+  width: 45vw; /* 오른쪽 주소box때문에 일단 만짐*/
+  margin: 0px 20px;
+}
+
+html,
+body {
+  height: 90vh;
+  margin: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+#holder-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.box {
+  background-color: wheat;
+  border: 3px solid tomato;
+  width: 13vw;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  border-radius: 0.7rem;
+}
+
+#button-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 7vw;
+  height: 5vh;
+  background-color: white;
+  border: 2px solid tomato;
+  border-radius: 0.7rem;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  margin: 5px 5px 5px 0;
+}
+
+#address {
+  width: 45vw;
+  height: 60vh;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+}
+
+.address-box {
+  width: 50%;
+  height: 27%;
+  border: 4px solid tomato;
+  border-radius: 1.2rem;
+  background-color: white;
+  margin-bottom: 4%;
+}
+
+h3,
+h4 {
+  margin-left: 10px;
+}
+
+#box-name,
+#box-input {
+  border: none;
+  color: white;
+  background-color: white;
+}

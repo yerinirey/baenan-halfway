@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 화면</title>
+  </head>
+  <body>
+    <img id="login" src="login.png" />
+    <form action="find.html" method="get">
+      <div class="user">
+        <div class="user-id">
+          <input required type="text" placeholder="Email / ID" />
+        </div>
+        <div class="user-pw">
+          <input
+            required
+            type="password"
+            minlength="10"
+            placeholder="Password"
+          />
+        </div>
+      </div>
+      <div id="button">
+        <input type="submit" value="sign in" id="submit" /></a>
+      </div>
+    </form>
+  </body>
+</html>
+<style>
+  @import "root.css";
+
+  #login {
+    height: 100vh;
+    position: relative;
+  }
+  form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user {
+    position: absolute;
+    margin-top: 41.8vh;
+    margin-left: -9.5vh;
+  }
+  .user-id {
+    margin-bottom: 6.2vh;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+  
+  #button {
+    text-align: center;
+    width: 115px;
+    height: 26px;
+    border-radius: 2rem;
+    margin-top: 64vh;
+    margin-left: -17.55vh;
+  }
+
+  #submit {
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    border: none;
+    text-decoration-line: none;
+    font-weight: 550;
+    font-size: large;
+    cursor: pointer;
+  }
+</style>
